@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OmahFE — Frontend for Everyone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#" class="navbar__brand">OmahFE</a>
+
+      <div class="navbar__links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar__actions">
+        <button type="button" class="btn btn--signin">
+          Sign In
+        </button>
+        <button type="button" class="btn btn--signup">
+          Sign Up
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero__arch" src="assets/images/hero-arch.svg" alt="" aria-hidden="true">
+
+      <div class="hero__content">
+        <div class="hero__copy">
+          <h1 id="hero-title" class="hero__title">
+            <span class="hero__title-main">Omah</span><span class="hero__title-accent">FE</span>
+          </h1>
+
+          <p class="hero__tagline">
+            <span>We Slice </span><span class="hero__highlight">FrontEnd</span><span> for </span><span class="hero__highlight">Everyone</span>
+          </p>
+
+          <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur quam orci. Donec cursus nibh vitae diam gravida mattis. Sed dignissim magna tortor, vitae varius libero consectetur viverra. Fusce posuere efficitur blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+
+        <div class="hero__illustration">
+          <img src="assets/images/fe-logo.svg" alt="FE logo illustration" width="400" height="400">
+        </div>
+      </div>
+
+      <div class="hero__socials">
+        <img src="assets/images/social-facebook.png" alt="Facebook" width="44" height="44">
+        <img src="assets/images/social-instagram.png" alt="Instagram" width="44" height="44">
+        <img src="assets/images/social-x.png" alt="X" width="44" height="44">
+        <img src="assets/images/social-linkedin.png" alt="LinkedIn" width="44" height="44">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
