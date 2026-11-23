@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OmahFE — Frontend for Everyone</title>
+  <title>Penugasan FE - Erlangga</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +17,7 @@
     rel="stylesheet"
   />
 
+  <link rel="icon" type="image/svg+xml" href="assets/images/fe-logo.svg">
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
@@ -47,262 +47,304 @@
 
   <main>
     <div class="page-band page-band--hero">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <img class="hero__arch" src="assets/images/hero-arch.svg" alt="" aria-hidden="true">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img class="hero__arch" src="assets/images/hero-arch.svg" alt="" aria-hidden="true">
 
-      <div class="hero__content">
-        <div class="hero__copy">
-          <h1 id="hero-title" class="hero__title">
-            <span class="hero__title-main">Omah</span><span class="hero__title-accent">FE</span>
-          </h1>
+        <div class="hero__content">
+          <div class="hero__copy">
+            <h1 id="hero-title" class="hero__title">
+              <span class="hero__title-main">Omah</span><span class="hero__title-accent">FE</span>
+            </h1>
 
-          <p class="hero__tagline">
-            <span>We Slice </span><span class="hero__highlight">FrontEnd</span><span> for </span><span class="hero__highlight">Everyone</span>
-          </p>
+            <p class="hero__tagline">
+              <span>We Slice </span><span class="hero__highlight">FrontEnd</span><span> for </span><span class="hero__highlight">Everyone</span>
+            </p>
 
-          <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur quam orci. Donec cursus nibh vitae diam gravida mattis. Sed dignissim magna tortor, vitae varius libero consectetur viverra. Fusce posuere efficitur blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur quam orci. Donec cursus nibh vitae diam gravida mattis. Sed dignissim magna tortor, vitae varius libero consectetur viverra. Fusce posuere efficitur blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+          </div>
+
+          <div class="hero__illustration">
+            <img src="assets/images/fe-logo.svg" alt="FE logo illustration" width="400" height="400">
+          </div>
         </div>
 
-        <div class="hero__illustration">
-          <img src="assets/images/fe-logo.svg" alt="FE logo illustration" width="400" height="400">
+        <div class="hero__socials">
+          <a
+            class="hero__social-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook (opens in a new tab)"
+          >
+            <img src="assets/images/social-facebook.png" alt="Facebook" width="44" height="44">
+          </a>
+          <a
+            class="hero__social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram (opens in a new tab)"
+          >
+            <img src="assets/images/social-instagram.png" alt="Instagram" width="44" height="44">
+          </a>
+          <a
+            class="hero__social-link"
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X (opens in a new tab)"
+          >
+            <img src="assets/images/social-x.png" alt="X" width="44" height="44">
+          </a>
+          <a
+            class="hero__social-link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn (opens in a new tab)"
+          >
+            <img src="assets/images/social-linkedin.png" alt="LinkedIn" width="44" height="44">
+          </a>
         </div>
-      </div>
-
-      <div class="hero__socials">
-        <img src="assets/images/social-facebook.png" alt="Facebook" width="44" height="44">
-        <img src="assets/images/social-instagram.png" alt="Instagram" width="44" height="44">
-        <img src="assets/images/social-x.png" alt="X" width="44" height="44">
-        <img src="assets/images/social-linkedin.png" alt="LinkedIn" width="44" height="44">
-      </div>
-    </section>
+      </section>
     </div>
 
     <div class="page-band page-band--about">
-    <section class="about" id="about" aria-labelledby="about-title">
-      <div class="about__content">
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__content">
 
-        <h2 class="about__heading" id="about-title">
-          <img
-            src="assets/images/about-title.svg"
-            alt="Tentang Kami"
-            width="330"
-            height="55"
-          >
-        </h2>
+          <h2 class="about__heading" id="about-title">
+            <img
+              src="assets/images/about-title.svg"
+              alt="Tentang Kami"
+              width="330"
+              height="55"
+            >
+          </h2>
 
-        <p class="about__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur quam orci. Donec cursus nibh vitae diam gravida mattis. Sed dignissim magna tortor, vitae varius libero consectetur viverra. Fusce posuere efficitur blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec bibendum efficitur ante, ac lacinia lectus egestas et. Donec aliquet ac lorem ac semper. Duis ultrices nibh ipsum, quis dapibus turpis consectetur sed. Suspendisse iaculis diam vel turpis volutpat, vel suscipit risus consectetur. Nam convallis lacinia feugiat. Pellentesque auctor eleifend orci sed molestie. Vestibulum fermentum erat nunc, non finibus orci commodo non. Praesent iaculis gravida elit eget laoreet. Nullam vel pulvinar dui.
-        </p>
+          <p class="about__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur quam orci. Donec cursus nibh vitae diam gravida mattis. Sed dignissim magna tortor, vitae varius libero consectetur viverra. Fusce posuere efficitur blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec bibendum efficitur ante, ac lacinia lectus egestas et. Donec aliquet ac lorem ac semper. Duis ultrices nibh ipsum, quis dapibus turpis consectetur sed. Suspendisse iaculis diam vel turpis volutpat, vel suscipit risus consectetur. Nam convallis lacinia feugiat. Pellentesque auctor eleifend orci sed molestie. Vestibulum fermentum erat nunc, non finibus orci commodo non. Praesent iaculis gravida elit eget laoreet. Nullam vel pulvinar dui.
+          </p>
 
-        <div class="about__stats">
-          <div class="about__stat">
-            <p class="about__stat-number">2015</p>
-            <p class="about__stat-label">Berdiri Sejak</p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <p class="about__stat-number">2015</p>
+              <p class="about__stat-label">Berdiri Sejak</p>
+            </div>
+
+            <div class="about__stat">
+              <p class="about__stat-number">225</p>
+              <p class="about__stat-label">Total Project</p>
+            </div>
           </div>
 
-          <div class="about__stat">
-            <p class="about__stat-number">225</p>
-            <p class="about__stat-label">Total Project</p>
-          </div>
         </div>
 
-      </div>
-
-      <a class="about__cta" href="#portfolio">
-        <span>Selanjutnya</span>
-        <img
-          src="assets/images/arrow-right.svg"
-          alt=""
-          aria-hidden="true"
-          width="20"
-          height="20"
-        >
-      </a>
-    </section>
+        <a class="about__cta" href="#portfolio">
+          <span>Selanjutnya</span>
+          <img
+            src="assets/images/arrow-right.svg"
+            alt=""
+            aria-hidden="true"
+            width="20"
+            height="20"
+          >
+        </a>
+      </section>
     </div>
 
     <div class="page-band page-band--portfolio">
-    <section
-      class="portfolio"
-      id="portfolio"
-      aria-labelledby="portfolio-title"
-    >
-      <h2 class="portfolio__title" id="portfolio-title">
-        <img
-          src="assets/images/portfolio-title.svg"
-          alt="See Our Latest Portofolio"
-        >
-      </h2>
-
-      <div class="portfolio__grid" id="portfolio-grid">
-
-        <article class="portfolio__card">
-          <img
-            class="portfolio__artwork"
-            src="assets/images/portfolio-artwork.png"
-            alt="Illustration of a black cat above two figures in a forest"
-          >
-          <div class="portfolio__shade" aria-hidden="true"></div>
-          <h3 class="portfolio__card-title">Lorem Ipsum</h3>
-        </article>
-
-        <article class="portfolio__card">
-          <img
-            class="portfolio__artwork"
-            src="assets/images/portfolio-artwork.png"
-            alt="Illustration of a black cat above two figures in a forest"
-          >
-          <div class="portfolio__shade" aria-hidden="true"></div>
-          <h3 class="portfolio__card-title">Lorem Ipsum</h3>
-        </article>
-
-        <article class="portfolio__card">
-          <img
-            class="portfolio__artwork"
-            src="assets/images/portfolio-artwork.png"
-            alt="Illustration of a black cat above two figures in a forest"
-          >
-          <div class="portfolio__shade" aria-hidden="true"></div>
-          <h3 class="portfolio__card-title">Lorem Ipsum</h3>
-        </article>
-
-        <article class="portfolio__card">
-          <img
-            class="portfolio__artwork"
-            src="assets/images/portfolio-artwork.png"
-            alt="Illustration of a black cat above two figures in a forest"
-          >
-          <div class="portfolio__shade" aria-hidden="true"></div>
-          <h3 class="portfolio__card-title">Lorem Ipsum</h3>
-        </article>
-
-        <article class="portfolio__card" hidden>
-          <img
-            class="portfolio__artwork"
-            src="assets/images/portfolio-artwork.png"
-            alt="Illustration of a black cat above two figures in a forest"
-          >
-          <div class="portfolio__shade" aria-hidden="true"></div>
-          <h3 class="portfolio__card-title">Lorem Ipsum</h3>
-        </article>
-
-        <article class="portfolio__card" hidden>
-          <img
-            class="portfolio__artwork"
-            src="assets/images/portfolio-artwork.png"
-            alt="Illustration of a black cat above two figures in a forest"
-          >
-          <div class="portfolio__shade" aria-hidden="true"></div>
-          <h3 class="portfolio__card-title">Lorem Ipsum</h3>
-        </article>
-
-        <article class="portfolio__card" hidden>
-          <img
-            class="portfolio__artwork"
-            src="assets/images/portfolio-artwork.png"
-            alt="Illustration of a black cat above two figures in a forest"
-          >
-          <div class="portfolio__shade" aria-hidden="true"></div>
-          <h3 class="portfolio__card-title">Lorem Ipsum</h3>
-        </article>
-
-        <article class="portfolio__card" hidden>
-          <img
-            class="portfolio__artwork"
-            src="assets/images/portfolio-artwork.png"
-            alt="Illustration of a black cat above two figures in a forest"
-          >
-          <div class="portfolio__shade" aria-hidden="true"></div>
-          <h3 class="portfolio__card-title">Lorem Ipsum</h3>
-        </article>
-
-      </div>
-
-      <button
-        class="portfolio__more"
-        type="button"
-        aria-controls="portfolio-grid"
-        aria-expanded="false"
+      <section
+        class="portfolio"
+        id="portfolio"
+        aria-labelledby="portfolio-title"
       >
-        <span class="portfolio__more-label">Show More</span>
-        <img
-          class="portfolio__more-icon"
-          src="assets/images/portfolio-arrow-down.svg"
-          alt=""
-          aria-hidden="true"
-        >
-      </button>
-    </section>
-    </div>
-    <div class="page-band page-band--testimonials">
-    <section class="testimonial-section" id="testimonials" aria-labelledby="testimonial-title">
-      <h2 class="testimonial-heading" id="testimonial-title">
-        <img class="testimonial-heading__artwork" src="assets/images/testimonial-title.svg" alt="What They Say about OmahFE?">
-      </h2>
+        <h2 class="portfolio__title" id="portfolio-title">
+          <img
+            src="assets/images/portfolio-title.svg"
+            alt="See Our Latest Portofolio"
+          >
+        </h2>
 
-      <div class="testimonial-carousel">
-        <button class="testimonial-nav testimonial-nav--previous" type="button" aria-label="Previous testimonial" aria-controls="testimonial-track">
-          <img class="testimonial-nav__arrow" src="assets/images/testimonial-arrow-left.svg" alt="" width="12" height="24">
-        </button>
+        <div class="portfolio__grid" id="portfolio-grid">
 
-        <div class="testimonial-viewport">
-          <div class="testimonial-track" id="testimonial-track">
-            <article class="testimonial-card testimonial-card--peach">
-              <div class="testimonial-card__placeholder" aria-hidden="true"></div>
-              <div class="testimonial-card__content">
-                <div class="testimonial-card__person">
-                  <h3 class="testimonial-card__name">Janu Pasha Shandy</h3>
-                  <p class="testimonial-card__position">Staff of OmahFE</p>
-                </div>
-                <p class="testimonial-card__quote">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </div>
-            </article>
-            <article class="testimonial-card testimonial-card--blue">
-              <div class="testimonial-card__placeholder" aria-hidden="true"></div>
-              <div class="testimonial-card__content">
-                <div class="testimonial-card__person">
-                  <h3 class="testimonial-card__name">Janu Pasha Shandy</h3>
-                  <p class="testimonial-card__position">Staff of OmahFE</p>
-                </div>
-                <p class="testimonial-card__quote">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </div>
-            </article>
-            <article class="testimonial-card testimonial-card--peach">
-              <div class="testimonial-card__placeholder" aria-hidden="true"></div>
-              <div class="testimonial-card__content">
-                <div class="testimonial-card__person">
-                  <h3 class="testimonial-card__name">Janu Pasha Shandy</h3>
-                  <p class="testimonial-card__position">Staff of OmahFE</p>
-                </div>
-                <p class="testimonial-card__quote">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </div>
-            </article>
-            <article class="testimonial-card testimonial-card--blue">
-              <div class="testimonial-card__placeholder" aria-hidden="true"></div>
-              <div class="testimonial-card__content">
-                <div class="testimonial-card__person">
-                  <h3 class="testimonial-card__name">Janu Pasha Shandy</h3>
-                  <p class="testimonial-card__position">Staff of OmahFE</p>
-                </div>
-                <p class="testimonial-card__quote">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </div>
-            </article>
-          </div>
+          <article class="portfolio__card">
+            <img
+              class="portfolio__artwork"
+              src="assets/images/portfolio-artwork.png"
+              alt="Illustration of a black cat above two figures in a forest"
+            >
+            <div class="portfolio__shade" aria-hidden="true"></div>
+            <h3 class="portfolio__card-title">Lorem Ipsum</h3>
+          </article>
+
+          <article class="portfolio__card">
+            <img
+              class="portfolio__artwork"
+              src="assets/images/portfolio-artwork.png"
+              alt="Illustration of a black cat above two figures in a forest"
+            >
+            <div class="portfolio__shade" aria-hidden="true"></div>
+            <h3 class="portfolio__card-title">Lorem Ipsum</h3>
+          </article>
+
+          <article class="portfolio__card">
+            <img
+              class="portfolio__artwork"
+              src="assets/images/portfolio-artwork.png"
+              alt="Illustration of a black cat above two figures in a forest"
+            >
+            <div class="portfolio__shade" aria-hidden="true"></div>
+            <h3 class="portfolio__card-title">Lorem Ipsum</h3>
+          </article>
+
+          <article class="portfolio__card">
+            <img
+              class="portfolio__artwork"
+              src="assets/images/portfolio-artwork.png"
+              alt="Illustration of a black cat above two figures in a forest"
+            >
+            <div class="portfolio__shade" aria-hidden="true"></div>
+            <h3 class="portfolio__card-title">Lorem Ipsum</h3>
+          </article>
+
+          <article class="portfolio__card" hidden>
+            <img
+              class="portfolio__artwork"
+              src="assets/images/portfolio-artwork.png"
+              alt="Illustration of a black cat above two figures in a forest"
+            >
+            <div class="portfolio__shade" aria-hidden="true"></div>
+            <h3 class="portfolio__card-title">Lorem Ipsum</h3>
+          </article>
+
+          <article class="portfolio__card" hidden>
+            <img
+              class="portfolio__artwork"
+              src="assets/images/portfolio-artwork.png"
+              alt="Illustration of a black cat above two figures in a forest"
+            >
+            <div class="portfolio__shade" aria-hidden="true"></div>
+            <h3 class="portfolio__card-title">Lorem Ipsum</h3>
+          </article>
+
+          <article class="portfolio__card" hidden>
+            <img
+              class="portfolio__artwork"
+              src="assets/images/portfolio-artwork.png"
+              alt="Illustration of a black cat above two figures in a forest"
+            >
+            <div class="portfolio__shade" aria-hidden="true"></div>
+            <h3 class="portfolio__card-title">Lorem Ipsum</h3>
+          </article>
+
+          <article class="portfolio__card" hidden>
+            <img
+              class="portfolio__artwork"
+              src="assets/images/portfolio-artwork.png"
+              alt="Illustration of a black cat above two figures in a forest"
+            >
+            <div class="portfolio__shade" aria-hidden="true"></div>
+            <h3 class="portfolio__card-title">Lorem Ipsum</h3>
+          </article>
+
         </div>
 
-        <button class="testimonial-nav testimonial-nav--next" type="button" aria-label="Next testimonial" aria-controls="testimonial-track">
-          <img class="testimonial-nav__arrow" src="assets/images/testimonial-arrow-left.svg" alt="" width="12" height="24">
+        <button
+          class="portfolio__more"
+          type="button"
+          aria-controls="portfolio-grid"
+          aria-expanded="false"
+        >
+          <span class="portfolio__more-label">Show More</span>
+          <img
+            class="portfolio__more-icon"
+            src="assets/images/portfolio-arrow-down.svg"
+            alt=""
+            aria-hidden="true"
+          >
         </button>
-      </div>
-    </section>
+      </section>
+    </div>
+    <div class="page-band page-band--testimonials">
+      <section class="testimonial-section" id="testimonials" aria-labelledby="testimonial-title">
+        <h2 class="testimonial-heading" id="testimonial-title">
+          <img class="testimonial-heading__artwork" src="assets/images/testimonial-title.svg" alt="What They Say about OmahFE?">
+        </h2>
+
+        <div class="testimonial-carousel">
+          <button
+            class="testimonial-nav testimonial-nav--previous"
+            type="button"
+            aria-label="Previous testimonial"
+            aria-controls="testimonial-track"
+          >
+            <img class="testimonial-nav__arrow" src="assets/images/testimonial-arrow-left.svg" alt="" width="12" height="24">
+          </button>
+
+          <div class="testimonial-viewport">
+            <div class="testimonial-track" id="testimonial-track">
+              <article class="testimonial-card testimonial-card--peach">
+                <div class="testimonial-card__placeholder" aria-hidden="true"></div>
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__person">
+                    <h3 class="testimonial-card__name">Janu Pasha Shandy</h3>
+                    <p class="testimonial-card__position">Staff of OmahFE</p>
+                  </div>
+                  <p class="testimonial-card__quote">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+              </article>
+              <article class="testimonial-card testimonial-card--blue">
+                <div class="testimonial-card__placeholder" aria-hidden="true"></div>
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__person">
+                    <h3 class="testimonial-card__name">Janu Pasha Shandy</h3>
+                    <p class="testimonial-card__position">Staff of OmahFE</p>
+                  </div>
+                  <p class="testimonial-card__quote">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+              </article>
+              <article class="testimonial-card testimonial-card--peach">
+                <div class="testimonial-card__placeholder" aria-hidden="true"></div>
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__person">
+                    <h3 class="testimonial-card__name">Janu Pasha Shandy</h3>
+                    <p class="testimonial-card__position">Staff of OmahFE</p>
+                  </div>
+                  <p class="testimonial-card__quote">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+              </article>
+              <article class="testimonial-card testimonial-card--blue">
+                <div class="testimonial-card__placeholder" aria-hidden="true"></div>
+                <div class="testimonial-card__content">
+                  <div class="testimonial-card__person">
+                    <h3 class="testimonial-card__name">Janu Pasha Shandy</h3>
+                    <p class="testimonial-card__position">Staff of OmahFE</p>
+                  </div>
+                  <p class="testimonial-card__quote">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button
+            class="testimonial-nav testimonial-nav--next"
+            type="button"
+            aria-label="Next testimonial"
+            aria-controls="testimonial-track"
+          >
+            <img class="testimonial-nav__arrow" src="assets/images/testimonial-arrow-left.svg" alt="" width="12" height="24">
+          </button>
+        </div>
+      </section>
     </div>
     <div class="page-band page-band--faq">
-    <section class="faq-section" id="faq" aria-labelledby="faq-title">
-      <h2 class="faq-heading" id="faq-title">
-        <img class="faq-heading__artwork" src="assets/images/faq-title.svg" alt="FAQ">
-      </h2>
+      <section class="faq-section" id="faq" aria-labelledby="faq-title">
+        <h2 class="faq-heading" id="faq-title">
+          <img class="faq-heading__artwork" src="assets/images/faq-title.svg" alt="FAQ">
+        </h2>
 
-      <div class="faq-accordion">
+        <div class="faq-accordion">
           <div class="faq-item">
             <h3 class="faq-question">
               <button class="faq-trigger" id="faq-question-1" type="button" aria-expanded="false" aria-controls="faq-answer-1">
@@ -347,90 +389,152 @@
               <p class="faq-answer__text">Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
           </div>
-      </div>
-    </section>
+        </div>
+      </section>
     </div>
     <div class="page-band page-band--contact">
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="contact-container">
-        <div class="contact-intro">
-          <div class="contact-intro__title">
-            <img class="contact-intro__artwork" src="assets/images/contact-idea-title.svg" alt="Punya ide? Yuk, kita wujudkan.">
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-container">
+          <div class="contact-intro">
+            <div class="contact-intro__title">
+              <img class="contact-intro__artwork" src="assets/images/contact-idea-title.svg" alt="Punya ide? Yuk, kita wujudkan.">
+            </div>
+            <p class="contact-intro__description">Ceritakan rencana dan kebutuhanmu.<br>Mari mulai percakapan yang baik.</p>
           </div>
-          <p class="contact-intro__description">Ceritakan rencana dan kebutuhanmu.<br>Mari mulai percakapan yang baik.</p>
-        </div>
 
-        <div class="contact-content">
-          <h2 class="contact-heading" id="contact-title">
-            <img class="contact-heading__artwork" src="assets/images/contact-title.svg" alt="Contact Us!">
-          </h2>
-          <form class="contact-form">
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="contact-first-name">First Name</label>
-              <input class="contact-form__input contact-form__input--name" id="contact-first-name" name="firstName" type="text" placeholder="Enter first name" autocomplete="given-name" required>
-            </div>
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="contact-last-name">Last Name</label>
-              <input class="contact-form__input contact-form__input--name" id="contact-last-name" name="lastName" type="text" placeholder="Enter last name" autocomplete="family-name" required>
-            </div>
-            <div class="contact-form__field contact-form__field--wide">
-              <label class="contact-form__label" for="contact-email">Email</label>
-              <input class="contact-form__input" id="contact-email" name="email" type="email" placeholder="enter@gmail.com" autocomplete="email" required>
-            </div>
-            <div class="contact-form__field contact-form__field--wide">
-              <label class="contact-form__label" for="contact-message">Message</label>
-              <textarea class="contact-form__input contact-form__textarea" id="contact-message" name="message" placeholder="Message" required></textarea>
-            </div>
-            <button class="contact-form__submit" type="submit">
-              <span>Send</span>
-              <img class="contact-form__send-icon" src="assets/images/contact-send-icon.svg" alt="" width="16" height="16">
-            </button>
-            <p class="contact-form__status" role="status" hidden></p>
-          </form>
+          <div class="contact-content">
+            <h2 class="contact-heading" id="contact-title">
+              <img class="contact-heading__artwork" src="assets/images/contact-title.svg" alt="Contact Us!">
+            </h2>
+            <form class="contact-form">
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-first-name">First Name</label>
+                <input
+                  class="contact-form__input contact-form__input--name"
+                  id="contact-first-name"
+                  name="firstName"
+                  type="text"
+                  placeholder="Enter first name"
+                  autocomplete="given-name"
+                  required
+                >
+              </div>
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-last-name">Last Name</label>
+                <input
+                  class="contact-form__input contact-form__input--name"
+                  id="contact-last-name"
+                  name="lastName"
+                  type="text"
+                  placeholder="Enter last name"
+                  autocomplete="family-name"
+                  required
+                >
+              </div>
+              <div class="contact-form__field contact-form__field--wide">
+                <label class="contact-form__label" for="contact-email">Email</label>
+                <input
+                  class="contact-form__input"
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  placeholder="enter@gmail.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+              <div class="contact-form__field contact-form__field--wide">
+                <label class="contact-form__label" for="contact-message">Message</label>
+                <textarea
+                  class="contact-form__input contact-form__textarea"
+                  id="contact-message"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <button class="contact-form__submit" type="submit">
+                <span>Send</span>
+                <img class="contact-form__send-icon" src="assets/images/contact-send-icon.svg" alt="" width="16" height="16">
+              </button>
+              <p class="contact-form__status" role="status" hidden></p>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   </main>
   <div class="page-band page-band--footer">
-  <footer class="site-footer">
-    <div class="footer-brand">
-      <img class="footer-logo" src="assets/images/footer-logo.png" alt="OmahFE">
-      <address class="footer-address">Gedung Fakultas MIPA UGM Sekip Utara,<br>Bulaksumur, Sinduadi, Mlati, Sleman, DI Yogyakarta</address>
-    </div>
-
-    <nav class="footer-navigation" aria-label="Footer navigation">
-      <div class="footer-navigation__page">
-        <h2 class="footer-heading">Page</h2>
-        <ul class="footer-links">
-          <li><a class="footer-link" href="#about">About Us</a></li>
-          <li><span class="footer-link">Our Services</span></li>
-          <li><a class="footer-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="footer-link" href="#testimonial-title">Testimonials</a></li>
-        </ul>
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/images/footer-logo.png" alt="OmahFE">
+        <address class="footer-address">Gedung Fakultas MIPA UGM Sekip Utara,<br>Bulaksumur, Sinduadi, Mlati, Sleman, DI Yogyakarta</address>
       </div>
-      <div class="footer-navigation__support">
-        <h2 class="footer-heading">Support</h2>
-        <a class="footer-link footer-link--contact" href="#contact">Contact</a>
-      </div>
-    </nav>
 
-    <div class="footer-socials">
-      <h2 class="footer-heading">Connect with Us</h2>
-      <div class="footer-socials__icons">
-        <img class="footer-socials__icon" src="assets/images/footer-instagram.png" alt="Instagram" width="44" height="44">
-        <img class="footer-socials__icon" src="assets/images/footer-facebook.png" alt="Facebook" width="44" height="44">
-        <img class="footer-socials__icon" src="assets/images/footer-x.png" alt="X (Twitter)" width="44" height="44">
-        <img class="footer-socials__icon" src="assets/images/footer-linkedin.png" alt="LinkedIn" width="44" height="44">
-      </div>
-    </div>
+      <nav class="footer-navigation" aria-label="Footer navigation">
+        <div class="footer-navigation__page">
+          <h2 class="footer-heading">Page</h2>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#about">About Us</a></li>
+            <li><span class="footer-link">Our Services</span></li>
+            <li><a class="footer-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="footer-link" href="#testimonial-title">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-navigation__support">
+          <h2 class="footer-heading">Support</h2>
+          <a class="footer-link footer-link--contact" href="#contact">Contact</a>
+        </div>
+      </nav>
 
-    <div class="footer-divider" aria-hidden="true"></div>
-    <p class="footer-copyright">
-      <img class="footer-copyright__icon" src="assets/images/footer-copyright.png" alt="Copyright" width="24" height="24">
-      <span>OmahFE 2026</span>
-    </p>
-  </footer>
+      <div class="footer-socials">
+        <h2 class="footer-heading">Connect with Us</h2>
+        <div class="footer-socials__icons">
+          <a
+            class="footer-socials__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram (opens in a new tab)"
+          >
+            <img class="footer-socials__icon" src="assets/images/footer-instagram.png" alt="Instagram" width="44" height="44">
+          </a>
+          <a
+            class="footer-socials__link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook (opens in a new tab)"
+          >
+            <img class="footer-socials__icon" src="assets/images/footer-facebook.png" alt="Facebook" width="44" height="44">
+          </a>
+          <a
+            class="footer-socials__link"
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X (opens in a new tab)"
+          >
+            <img class="footer-socials__icon" src="assets/images/footer-x.png" alt="X (Twitter)" width="44" height="44">
+          </a>
+          <a
+            class="footer-socials__link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn (opens in a new tab)"
+          >
+            <img class="footer-socials__icon" src="assets/images/footer-linkedin.png" alt="LinkedIn" width="44" height="44">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+      <p class="footer-copyright">
+        <img class="footer-copyright__icon" src="assets/images/footer-copyright.png" alt="Copyright" width="24" height="24">
+        <span>OmahFE 2026</span>
+      </p>
+    </footer>
   </div>
 </body>
 </html>

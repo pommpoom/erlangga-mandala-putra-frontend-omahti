@@ -1,7 +1,4 @@
-
-/* =========================
-   GLOBAL STYLES
-========================= */
+/* Global Styles */
 
 * {
   margin: 0;
@@ -18,9 +15,7 @@ a {
   font: inherit;
 }
 
-/* =========================
-   FULL-WIDTH BACKGROUNDS
-========================= */
+/* Full-Width Backgrounds */
 
 .page-band {
   width: 100%;
@@ -55,12 +50,11 @@ a {
   background-color: #84ADCE;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* Navbar */
 
 html {
   scroll-padding-top: 85px;
+  scroll-behavior: smooth;
 }
 
 .site-header {
@@ -85,8 +79,6 @@ html {
   gap: 10px;
 }
 
-/* Brand */
-
 .navbar__brand {
   width: 141px;
   flex-shrink: 0;
@@ -97,8 +89,6 @@ html {
   color: #600e01;
   text-decoration: none;
 }
-
-/* Navigation Links */
 
 .navbar__links {
   display: flex;
@@ -124,12 +114,6 @@ html {
   transition: background-color 0.2s ease;
 }
 
-.navbar__links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Authentication Buttons */
-
 .navbar__actions {
   display: flex;
   align-items: center;
@@ -153,11 +137,7 @@ html {
 
   border-radius: 2px;
   cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
+  transition: background-color 0.2s ease;
 }
 
 .btn--signin {
@@ -176,9 +156,7 @@ html {
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 2px 2px 0 #213d1b;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* Hero Section */
 
 .hero {
   position: relative;
@@ -218,8 +196,13 @@ html {
   line-height: 70px;
 }
 
-.hero__title-main { color: #4a4a4a; }
-.hero__title-accent { color: #ed2304; }
+.hero__title-main {
+  color: #4a4a4a;
+}
+
+.hero__title-accent {
+  color: #ed2304;
+}
 
 .hero__tagline {
   width: 584px;
@@ -233,7 +216,9 @@ html {
   white-space: nowrap;
 }
 
-.hero__highlight { color: #84adce; }
+.hero__highlight {
+  color: #84adce;
+}
 
 .hero__description {
   width: 584px;
@@ -281,9 +266,7 @@ html {
   height: 44px;
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
+/* About Section */
 
 .about {
   width: 100%;
@@ -393,7 +376,7 @@ html {
   text-decoration: none;
   white-space: nowrap;
 
-  box-shadow: 0 1px 2px rgba(16,24,40,0.05);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
 }
 
 .about__cta img {
@@ -403,9 +386,7 @@ html {
   flex-shrink: 0;
 }
 
-/* =========================
-   PORTFOLIO SECTION
-========================= */
+/* Portfolio Section */
 
 .portfolio {
   box-sizing: border-box;
@@ -517,7 +498,7 @@ html {
 
   box-shadow:
     3.351px 3.351px 0 #213D1B,
-    0 1.676px 3.351px rgba(16,24,40,0.05);
+    0 1.676px 3.351px rgba(16, 24, 40, 0.05);
 
   cursor: pointer;
 }
@@ -539,9 +520,7 @@ html {
   outline-offset: 4px;
 }
 
-/* =========================
-   TESTIMONIALS SECTION
-========================= */
+/* Testimonials Section */
 
 .testimonial-section {
   width: 100%;
@@ -608,6 +587,7 @@ html {
 }
 
 .testimonial-viewport {
+  position: relative;
   flex: 1;
   min-width: 0;
   overflow: hidden;
@@ -688,9 +668,7 @@ html {
   overflow-wrap: break-word;
 }
 
-/* =========================
-   FAQ SECTION
-========================= */
+/* FAQ Section */
 
 .faq-section {
   width: 100%;
@@ -793,9 +771,7 @@ html {
   overflow-wrap: break-word;
 }
 
-/* =========================
-   CONTACT SECTION
-========================= */
+/* Contact Section */
 
 .contact-section {
   width: 100%;
@@ -979,9 +955,7 @@ html {
   }
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* Footer */
 
 .site-footer {
   position: relative;
@@ -1430,4 +1404,126 @@ html {
     width: 100%;
     height: auto;
   }
+}
+
+/* Interaction feedback */
+.hero__social-link,
+.footer-socials__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.hero__social-link:focus-visible,
+.footer-socials__link:focus-visible {
+  outline: 2px solid #41372E;
+  outline-offset: 4px;
+}
+
+.footer-link[href] {
+  transition: color 0.2s ease;
+}
+
+.about__cta,
+.portfolio__more,
+.testimonial-nav,
+.faq-trigger,
+.contact-form__submit {
+  transition: background-color 0.2s ease;
+}
+
+.navbar__brand:focus-visible,
+.navbar__links a:focus-visible,
+.btn:focus-visible,
+.about__cta:focus-visible {
+  outline: 2px solid #600E01;
+  outline-offset: 4px;
+}
+
+.contact-form__submit:focus-visible {
+  outline-color: #F4F1EF;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero__social-link:hover,
+  .footer-socials__link:hover {
+    opacity: 0.8;
+  }
+
+  .footer-link[href]:hover {
+    color: #600E01;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .navbar__links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .btn--signin:hover {
+    background-color: #CBBFB5;
+  }
+
+  .btn--signup:hover {
+    background-color: #578BB3;
+  }
+
+  .about__cta:hover {
+    background-color: #781403;
+  }
+
+  .portfolio__more:hover,
+  .testimonial-nav:hover,
+  .contact-form__submit:hover {
+    background-color: #EB4932;
+  }
+
+  .faq-trigger:hover {
+    background-color: rgba(65, 55, 46, 0.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .navbar__links a,
+  .hero__social-link,
+  .footer-socials__link,
+  .btn,
+  .about__cta,
+  .portfolio__more,
+  .portfolio__more-icon,
+  .testimonial-nav,
+  .faq-trigger,
+  .contact-form__submit,
+  .footer-link[href] {
+    transition: none;
+  }
+}
+
+/* Temporary animation states */
+.portfolio__grid--animating {
+  overflow: hidden;
+  align-content: start;
+}
+
+.testimonial-track--animating {
+  visibility: hidden;
+}
+
+.testimonial-motion {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.faq-answer--animating {
+  min-height: 0;
+  overflow: hidden;
 }
