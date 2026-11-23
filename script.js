@@ -36,3 +36,25 @@
     track.prepend(track.lastElementChild);
   });
 })();
+
+(() => {
+  const section = document.querySelector(".faq-section");
+  if (!section) return;
+
+  const items = Array.from(section.querySelectorAll(".faq-item"), (item) => ({
+    trigger: item.querySelector(".faq-trigger"),
+    answer: item.querySelector(".faq-answer"),
+  }));
+
+  items.forEach(({ trigger }) => {
+    trigger.addEventListener("click", () => {
+      const open = trigger.getAttribute("aria-expanded") !== "true";
+
+      items.forEach(({ trigger: current, answer }) => {
+        const expanded = current === trigger && open;
+        current.setAttribute("aria-expanded", String(expanded));
+        answer.hidden = !expanded;
+      });
+    });
+  });
+})();
