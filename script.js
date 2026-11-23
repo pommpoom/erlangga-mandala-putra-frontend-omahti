@@ -58,3 +58,37 @@
     });
   });
 })();
+
+(() => {
+  const section = document.querySelector(".contact-section");
+  if (!section) return;
+
+  const form = section.querySelector(".contact-form");
+  const status = section.querySelector(".contact-form__status");
+  const fields = Array.from(form.querySelectorAll(".contact-form__input"));
+
+  const validateWhitespace = (field) => {
+    field.setCustomValidity(
+      field.value.length > 0 && !field.value.trim()
+        ? "Please enter more than whitespace."
+        : ""
+    );
+  };
+
+  fields.forEach((field) => {
+    field.addEventListener("input", () => {
+      validateWhitespace(field);
+      status.hidden = true;
+      status.textContent = "";
+    });
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    fields.forEach(validateWhitespace);
+    if (!form.reportValidity()) return;
+
+    status.hidden = false;
+    status.textContent = "Ini masih form demo yaa, jadi pesannya belum bisa dikirim.";
+  });
+})();
